@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="PT">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Viaturas na Unisave</title>
-    <link rel="stylesheet" href="style.css">  
-    <link rel="short cut icon" href="Img/favicon.png">
-</head>
-<body>
-    <main >
-        <img src="Img/favicon.png" alt="Logotipo da Unisave">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="short cut icon" href="Img/favicon.png" />
+  </head>
+  <body>
+    <main>
+      <img src="./Img/favicon.png" alt="Logotipo da Unisave" />
     </main>
     <h1>Sistema de Controle de viaturas dentro do campus da Unisave-Sede</h1>
-   <div class="tudo" >
-        <div class="primeiro">
-        <input type="text" id="name" placeholder="Marca do veículo (Ex: Toyota-vitz)" autocomplete="off">
-        <input type="text" id="licence" placeholder="Matricula do veículo (Ex: AAA 111 MZ)" autocomplete="off">
+    <div class="tudo">
+      <div class="primeiro">
+        <input
+          type="text"
+          id="name"
+          placeholder="Marca do veículo (Ex: Toyota-vitz)"
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          id="licence"
+          placeholder="Matricula do veículo (Ex: AAA 111 MZ)"
+          autocomplete="off"
+        />
         <!-- <input type="text" id="cargo" placeholder="Cargo do dono do veículo" autocomplete="off"> -->
-        
-        <div class="select">  
-        <select name="list" id="cargo">
+
+        <div class="select">
+          <select name="list" id="cargo">
             <!-- <option selected >Escolha uma opção</option> -->
             <option value="ESTUDANTE">Estudante</option>
             <option value="DOCENTE">Docente</option>
             <option value="VISITANTE">Visitante</option>
-        </select>
-         </div>
-        <input type="text" id="dono" placeholder="Nome do Condutor do veículo" autocomplete="off">
+          </select>
+        </div>
+        <input
+          type="text"
+          id="dono"
+          placeholder="Nome do Condutor do veículo"
+          autocomplete="off"
+        />
         <button id="send" class="success">Registrar</button>
-    </div>
-    <table>
+        <input type="text" class="search" />
+      </div>
+      <table>
         <thead>
-            <tr>
-                <th>Nome do Veículo</th>
-                <th>Matricula</th>
-                <th>Cargo</th>
-                <th>Nome do Condutor</th>
-                 <th>Hora de Entrada</th>
+          <tr>
+            <th>Nome do Veículo</th>
+            <th>Matricula</th>
+            <th>Cargo</th>
+            <th>Nome do Condutor</th>
+            <th>Hora de Entrada</th>
             <th>Senha</th>
-                <th>Ações</th>
-                
-            </tr>
+            <th>Ações</th>
+          </tr>
         </thead>
         <tbody id="garage"></tbody>
-    </table>
-</div>
+      </table>
+    </div>
+  </body>
 
-</body>
-
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </html>
